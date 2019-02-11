@@ -1,0 +1,21 @@
+CREATE DATABASE Artwork
+
+  CREATE TABLE User
+  (
+    User_Id INT NOT NULL,
+    User_Name VARCHAR(20),
+    User_Phone INT(11),
+    CONSTRAINT User_PK PRIMARY KEY (User_Id)
+  );
+
+  CREATE TABLE Piece
+  (
+    Piece_Id  INT NOT NULL,
+    Piece_Name  VARCHAR(20),
+    Piece_Date  VARCHAR(25),
+    Piece_Material  VARCHAR(25),
+    CONSTRAINT Piece_PK PRIMARY KEY (Piece_Id)
+  );
+
+INSERT INTO PIECE VALUES(12345, 'sculpture', 'June 5, 1960', 'Bronze');
+INSERT INTO USER VALUES(404, 'Teo', '1(877)-CASHNOW');
